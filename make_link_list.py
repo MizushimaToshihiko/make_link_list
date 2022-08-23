@@ -5,7 +5,7 @@ import os
 import sys
 from selenium import webdriver
 
-chromedriver_path = r"C:\Users\toshi\anaconda3\chromedriver.exe"
+chromedriver_path = os.environ["CONDA_PREFIX"]+r"\chromedriver.exe"
 
 cur_dir = os.getcwd()
 download_dir = f'{cur_dir}' + r"\link_list"
